@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #install docker
 sudo apt-get install docker.io  docker-compose-v2 
