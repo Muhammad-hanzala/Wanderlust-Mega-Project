@@ -2,6 +2,10 @@ resource "aws_key_pair" "deployer" {
   key_name   = "terra-key"
   public_key = file("/c/Users/Osama/Desktop/Wander-lust-Mega-Project/Wanderlust-Mega-Project/terraform/terra-key.pub")
 }
+resource "aws_iam_instance_profile" "ec2_profile" {
+  name = "terraform-ec2-instance-profile"
+  role = "terraform-ec2-role"  # <-- your existing role name in AWS Console
+}
 
 resource "aws_default_vpc" "default" {
 
@@ -137,6 +141,7 @@ resource "aws_instance" "testinstance" {
   instance_type   = var.instance_type
   key_name        = aws_key_pair.deployer.key_name
   security_groups = [aws_security_group.allow_user_to_connect.name]
+  iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
   tags = {
     Name = "Automate"
   }
