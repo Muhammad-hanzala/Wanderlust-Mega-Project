@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #install docker
-sudo apt-get install docker.io  docker-compose-v2 
-chmod 777 /var/run/docker.sock
+sudo apt-get install docker.io  docker-compose-v2  -y
+sudo chmod 777 /var/run/docker.sock
 sudo usermod -aG docker $USER  && newgrp docker
 
 #install jenkins
 
 sudo apt-get update
-sudo apt install fontconfig openjdk-21-jre
+sudo apt install fontconfig openjdk-21-jre -y
 
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
@@ -37,9 +37,6 @@ kubectl version --short --client
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
-
-
-
 
 #Install Trivy (Jenkins Master)
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
