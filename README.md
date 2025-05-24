@@ -324,7 +324,8 @@ sudo apt-get install trivy -y
 ![image](https://github.com/user-attachments/assets/2fdc1e56-f78c-43d2-914a-104ec2c8ea86)
 #
 - <b> Go to <mark> Manage Jenkins --> credentials</mark> and add Github credentials to push updated code from the pipeline:</b>
-![Sharedlib-config-2 png](https://github.com/user-attachments/assets/ae796ff5-d3c8-406b-9155-6ee2f4959b20)
+![Sharedlib-config-2 png](https://github.com/user-attachments/assets/9ec59f2c-1e57-4dcf-b0ba-82fd9112434b)
+
 
 > [!Note]
 > While adding github credentials add Personal Access Token in the password field.
@@ -332,9 +333,10 @@ sudo apt-get install trivy -y
 - <b>Go to <mark> Manage Jenkins --> System</mark> and search for SonarQube installations:</b>
 ![image](https://github.com/user-attachments/assets/ae866185-cb2b-4e83-825b-a125ec97243a)
 #
-- <b>Now again, Go to <mark> Manage Jenkins --> System</mark> and search for Global Trusted Pipeline Libraries:</b
+- <b>Now again, Go to <mark> Manage Jenkins --> System</mark> and search for Global Trusted Pipeline Libraries:</b>
 ![image](https://github.com/user-attachments/assets/874b2e03-49b9-4c26-9b0f-bd07ce70c0f1)
-![modern scm](https://github.com/user-attachments/assets/9edc6132-331c-4cd0-9685-f6ba9c0c7ff2)
+![moder scm](https://github.com/user-attachments/assets/18a69941-88c3-4dc2-8da4-78251b477ab0)
+
 
 #
 - <b>Login to SonarQube server, go to <mark>Administration --> Webhook</mark> and click on create </b>
@@ -342,10 +344,12 @@ sudo apt-get install trivy -y
 ![image](https://github.com/user-attachments/assets/a8b45948-766a-49a4-b779-91ac3ce0443c)
 #
 - <b>Now, go to github repository and under <mark>Automations</mark> directory update the <mark>instance-id</mark> field on both the <mark>updatefrontendnew.sh updatebackendnew.sh</mark> with the k8s worker's instance id</b>
-![image](https://github.com/user-attachments/assets/3cb044b4-df88-4d68-bf7c-775cf78d5bf2)
+![update sh](https://github.com/user-attachments/assets/4f2d9147-e48a-45e8-b7f9-7962bdb1b8d7)
+
 #
 - <b>Navigate to <mark> Manage Jenkins --> credentials</mark> and add credentials for docker login to push docker image:</b>
-![image](https://github.com/user-attachments/assets/1a8287fc-b205-4156-8342-3f660f15e8fa)
+![dockerhub](https://github.com/user-attachments/assets/b0cc1421-9e35-4205-be77-c371b30d7e90)
+
 #
 - <b>Create a <mark>Wanderlust-CI</mark> pipeline</b>
 ![image](https://github.com/user-attachments/assets/55c7b611-3c20-445f-a49c-7d779894e232)
@@ -411,7 +415,7 @@ chmod 777 /var/run/docker.sock
 ![image](https://github.com/user-attachments/assets/3e2468ff-8cb2-4bda-a8cc-0742cd6d0cae)
 
 - <b>Congratulations, your application is deployed on AWS EKS Cluster</b>
-![image](https://github.com/user-attachments/assets/bc2d9680-fe00-49f9-81bf-93c5595c20cc)
+![aws](https://github.com/user-attachments/assets/fc5cb0ca-91dc-4734-bb0d-84fa04a275e6)
 ![image](https://github.com/user-attachments/assets/1ea9d486-656e-40f1-804d-2651efb54cf6)
 - <b>Open port 31000 and 31100 on worker node and Access it on browser</b>
 ```bash
