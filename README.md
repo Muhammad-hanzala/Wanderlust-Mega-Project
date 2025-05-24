@@ -29,6 +29,7 @@ WanderLust is a simple MERN travel blog website ✈ This project is aimed to hel
 ### How pipeline will look after deployment:
 - <b>CI pipeline to build and push</b>
 ![image](https://github.com/user-attachments/assets/20542d8b-0701-43ed-b2f8-82f8ed28d053)
+![blue ocean CI pipeline](https://github.com/user-attachments/assets/1f335d48-a14f-4091-94e7-4ec0b7994661)
 
 - <b>CD pipeline to update application version</b>
 ![image](https://github.com/user-attachments/assets/8fd13807-622e-45f7-af23-dcc1ba30ca5d)
@@ -399,8 +400,8 @@ chmod 777 /var/run/docker.sock
 #
 - <b>Go to <mark>Settings --> Repositories</mark> and click on <mark>Connect repo</mark> </b>
 ![image](https://github.com/user-attachments/assets/cc8728e5-546b-4c46-bd4c-538f4cd6a63d)
-![image](https://github.com/user-attachments/assets/eb3646e2-db84-4439-a11a-d4168080d9cc)
-![image](https://github.com/user-attachments/assets/a07f8703-5ef3-4524-aaa7-39a139335eb7)
+![argco add repo](https://github.com/user-attachments/assets/ccad27d3-9a13-437d-85c9-1206c9a116c8)
+
 > [!Note]
 > Connection should be successful
 
@@ -410,18 +411,16 @@ chmod 777 /var/run/docker.sock
 
 > [!Important]
 > Make sure to click on the <mark>Auto-Create Namespace</mark> option while creating argocd application
-
-![image](https://github.com/user-attachments/assets/55dcd3c2-5424-4efb-9bee-1c12bbf7f158)
+![argocd](https://github.com/user-attachments/assets/fa084710-3797-4aa0-8855-5119702cc115)
 ![image](https://github.com/user-attachments/assets/3e2468ff-8cb2-4bda-a8cc-0742cd6d0cae)
 
 - <b>Congratulations, your application is deployed on AWS EKS Cluster</b>
-![aws](https://github.com/user-attachments/assets/fc5cb0ca-91dc-4734-bb0d-84fa04a275e6)
 ![image](https://github.com/user-attachments/assets/1ea9d486-656e-40f1-804d-2651efb54cf6)
 - <b>Open port 31000 and 31100 on worker node and Access it on browser</b>
 ```bash
 <worker-public-ip>:31000
 ```
-![image](https://github.com/user-attachments/assets/a4b2a4b4-e1aa-4b22-ac6b-f40003d0723a)
+![port 31000](https://github.com/user-attachments/assets/e47d8696-71ba-4378-8c5f-2f8d3375b591)
 ![image](https://github.com/user-attachments/assets/06f9f1c8-094d-4d9f-a9d8-256fb18a9ae4)
 ![image](https://github.com/user-attachments/assets/64394f90-8610-44c0-9f63-c3a21eb78f55)
 - <b>Email Notification</b>
