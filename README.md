@@ -324,7 +324,8 @@ sudo apt-get install trivy -y
 ![image](https://github.com/user-attachments/assets/2fdc1e56-f78c-43d2-914a-104ec2c8ea86)
 #
 - <b> Go to <mark> Manage Jenkins --> credentials</mark> and add Github credentials to push updated code from the pipeline:</b>
-![image](https://github.com/user-attachments/assets/4d0c1a47-621e-4aa2-a0b1-71927fcdaef4)
+![Sharedlib-config-2 png](https://github.com/user-attachments/assets/ae796ff5-d3c8-406b-9155-6ee2f4959b20)
+
 > [!Note]
 > While adding github credentials add Personal Access Token in the password field.
 #
